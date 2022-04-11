@@ -13,14 +13,14 @@ export default function ResCard({ data, showSwiggyOnly, index }) {
                         <h5 className="card-title">{data.name}</h5>
                         <p className="card-text" title={data.food_types.toString()}>{data.food_types.toString()}</p>
                         <div className='row'>
-                            <div className='col-4'>
+                            <div className='col-3'>
                                 {data.ratings ? <label className='star-label'>* {data.ratings}</label> : '---'}
                             </div>
-                            <div className='col-4'>
-                                <li>{data.delivery_time}</li>
+                            <div className='col-3'>
+                                • {data.delivery_time}
                             </div>
-                            <div className='col-4'>
-                                <li>{data.price_for_two}</li>
+                            <div className='col-6'>
+                                • ₹{data.price_for_two} FOR TWO
                             </div>
                         </div>
                     </div>
