@@ -27,8 +27,16 @@ export default function Home() {
 
     const handleCategoryChange = (value) => {
         setSelectedCategory(value);
-        const index = apiData.findIndex(ele => ele.category === value);
-        setRestaurantList(apiData[index].restaurantList);
+        if (value === 'all') {
+            const allCategories = [];
+            apiData.forEach(ele => {
+                allCategories.push(...ele.restaurantList);
+            })
+            setRestaurantList(allCategories);
+        } else {
+            const index = apiData.findIndex(ele => ele.category === value);
+            setRestaurantList(apiData[index].restaurantList);
+        }
     }
 
     useEffect(() => {

@@ -7,6 +7,7 @@ export default function SideMenu(props) {
                 <label>Category:</label>
                 <select className='form-control' value={props.selectedCategory} onChange={e => props.handleCategoryChange(e.target.value)}>
                     {props.categoryList.map(ele => <option key={ele} value={ele}>{ele}</option>)}
+                    <option value='all'>All</option>
                 </select>
             </div>
             <div className='col-12 side-menu-item'>
