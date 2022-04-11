@@ -1,0 +1,45 @@
+.restarunts-list {
+    margin-top: 4rem;
+}
+
+.show-more {
+    color: orange;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    height: 80%;
+}
+
+.res-image {
+    width: 100%;
+    height: 240px;
+}
+
+.card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.star-label {
+    background-color: #44c578;
+    padding: 0.2rem;
+    color: #fff;
+}
+
+.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.side-menu-item {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    margin-right: 1rem;
+}
